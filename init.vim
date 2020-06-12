@@ -49,4 +49,5 @@ map <C-n> :NERDTreeToggle<CR>
 nnoremap <C-h> gT
 nnoremap <C-l> gt
 nnoremap <C-p> :Files<CR>
+nnoremap <C-m> :w<CR>
 nnoremap <C-x> :q<CR>
