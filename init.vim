@@ -34,6 +34,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install'  }
 
 call plug#end()
 
@@ -51,3 +53,11 @@ nnoremap <C-l> gt
 nnoremap <C-p> :Files<CR>
 nnoremap <C-m> :w<CR>
 nnoremap <C-x> :q<CR>
+
+"Emmet
+imap ,, <C-y>,
+
+"Coc prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selectedHello world)
