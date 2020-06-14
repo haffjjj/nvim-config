@@ -35,7 +35,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install'  }
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
