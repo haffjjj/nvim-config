@@ -45,14 +45,19 @@ colorscheme dracula
 "NERDTree 
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * :terminal
+autocmd VimEnter * :set autoread | au CursorHold * checktime | call feedkeys("G")
+autocmd VimEnter * :sp sb N
+autocmd VimEnter * :resize 45
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
+  
 "Key mappings
 nnoremap <C-h> gT
 nnoremap <C-l> gt
 nnoremap <C-p> :Files<CR>
 nnoremap <C-m> :w<CR>
 nnoremap <C-x> :q<CR>
+tnoremap <C-w> <C-[><C-[> <C-\><C-n>
 
 "Key mappings - Emmet
 imap ,, <C-y>,
